@@ -12,6 +12,8 @@
 		2A8668F91CB050F700EABD07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8668F71CB050F700EABD07 /* Main.storyboard */; };
 		2A8668FB1CB050F700EABD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8668FA1CB050F700EABD07 /* Assets.xcassets */; };
 		2A8668FE1CB050F700EABD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8668FC1CB050F700EABD07 /* LaunchScreen.storyboard */; };
+		2A8669061CB0512500EABD07 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8669051CB0512500EABD07 /* MapKit.framework */; };
+		2A8669081CB0583F00EABD07 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8669071CB0583F00EABD07 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2A8668FA1CB050F700EABD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8668FD1CB050F700EABD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A8668FF1CB050F700EABD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8669051CB0512500EABD07 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A8669071CB0583F00EABD07 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8669061CB0512500EABD07 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		2A8668E71CB050F700EABD07 = {
 			isa = PBXGroup;
 			children = (
+				2A8669051CB0512500EABD07 /* MapKit.framework */,
 				2A8668F21CB050F700EABD07 /* MyLocation */,
 				2A8668F11CB050F700EABD07 /* Products */,
 			);
@@ -54,6 +60,7 @@
 		2A8668F21CB050F700EABD07 /* MyLocation */ = {
 			isa = PBXGroup;
 			children = (
+				2A8669071CB0583F00EABD07 /* LocationManager.swift */,
 				2A8668F31CB050F700EABD07 /* AppDelegate.swift */,
 				2A8668F51CB050F700EABD07 /* ViewController.swift */,
 				2A8668F71CB050F700EABD07 /* Main.storyboard */,
@@ -138,6 +145,7 @@
 			files = (
 				2A8668F61CB050F700EABD07 /* ViewController.swift in Sources */,
 				2A8668F41CB050F700EABD07 /* AppDelegate.swift in Sources */,
+				2A8669081CB0583F00EABD07 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristiancvanega.MyLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristiancvanega.MyLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +299,7 @@
 				2A8669041CB050F700EABD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
